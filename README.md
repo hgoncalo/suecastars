@@ -10,7 +10,7 @@ This project revolves around creating a minigame using *Python* to simulate a po
 
 ### Version 1.1 
 
-- Fixed partners name chaning mid-game (thanks Hugo)
+- Fixed partners name chaning mid-game (thanks [Hugo Nogueira (@HugoNogueira05)](https://www.github.com/HugoNogueira05))
 
 ### Version 1.0 (First Release)
 

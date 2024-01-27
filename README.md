@@ -8,14 +8,15 @@ This project revolves around creating a minigame using *Python* to simulate a po
 
  - [Sueca (Wikipedia)](https://en.wikipedia.org/wiki/Sueca_(card_game))
 
+### Version 1.1 
+
+- Fixed partners name chaning mid-game
 
 ### Version 1.0 (First Release)
 
 - Added shuffled decks
 - Added shuffled names
 - Ensured Sueca rules/mechanics
-
-*(Known-bugs/**TO-DO** : Fix the partners names chaning mid-game)*
 
 
 ## Deploy

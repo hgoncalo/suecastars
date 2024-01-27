@@ -29,7 +29,8 @@ def decks():
     #se menos de 10 pontos e sem trunfos, então pode desistir
     return deck,trump
 
-def main():
+def main(seed2):
+    random.seed(seed2)
     names = ('Leonard','Sheldon','Howard','Raj','Penny','Bernadette','Amy','Ted','Barney','Marshall','Robin','Lily','Will','Geoffrey','Carlton','Vivian','Ashley','Phil','Hilary')
     chosen_names = random.sample(names,3)
     player1 = str(input('Write your username here: '))
@@ -44,11 +45,11 @@ def main():
     return players
 
 
-def play_rounds(i=0):
+def play_rounds(seed2,i=0):
     deck_return = decks()
     deck = deck_return[0]
     trump = deck_return[1]
-    players = main()
+    players = main(seed2)
     played = {'0':'','1':'','2':'','3':''}
     starter = 0
     team1_points = team2_points = 0
@@ -68,8 +69,9 @@ def play_rounds(i=0):
 
 def victories():
     team1_victories = team2_victories = 0
+    seed2 = random.choice([1,100])
     while (team1_victories or team2_victories)<4:
-        points = play_rounds()
+        points = play_rounds(seed2)
         #debugging
         print(points[0],points[1])
 
